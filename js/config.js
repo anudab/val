@@ -5,7 +5,7 @@
 
 const CONFIG = {
     // Passcode for the proposal
-    PASSCODE: '123456',
+    PASSCODE: '1014',
     
     // EmailJS Configuration
     EMAILJS_SERVICE_ID: 'service_pwn36u9',

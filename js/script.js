@@ -112,12 +112,24 @@ yesBtn.addEventListener('click', () => {
     
     // Launch confetti!
     launchConfetti();
+
+    // Show special message after 5 seconds
+    setTimeout(handleSpecialMessage, 2);
     
     // More confetti waves
     setTimeout(launchConfetti, 500);
     setTimeout(launchConfetti, 1000);
     setTimeout(launchConfetti, 1500);
 });
+
+function handleSpecialMessage() {
+    const promise = document.getElementById('promise');
+    promise.classList.remove('hidden');
+    // Trigger fade-in after a brief delay to allow the transition
+    setTimeout(() => {
+        promise.classList.add('visible');
+    }, 50);
+}
 
 // Confetti function
 function launchConfetti() {
