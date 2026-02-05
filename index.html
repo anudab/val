@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine Manika? 💕</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- EmailJS SDK for automatic email sending -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="hearts-container" id="hearts"></div>
+    
+    <div class="card" id="card">
+        <div class="passcode-view" id="passcodeView">
+            <h1>Welcome, My Love! 💖</h1>
+            <p class="instruction">Please enter the secret passcode to see my special question for you:</p>
+            <input type="password" id="passcodeInput" placeholder="Enter Passcode" />
+            <button class="btn submit-btn" id="submitPasscodeBtn">Submit</button>
+            <p class="hint">Hint: It's the name of our favorite flower 🌸</p>
+        </div>
+
+        <div class="question-view hidden" id="questionView">
+            <h1>Hey Beautiful! 💖</h1>
+            <p class="message">I have a very important question...</p>
+            <h2 class="question">Will you be my Valentine?</h2>
+            <div class="buttons">
+                <button class="btn yes-btn" id="yesBtn">Yes! 💕</button>
+                <button class="btn no-btn" id="noBtn">No</button>
+            </div>
+        </div>
+        
+        <div class="success-view hidden" id="successView">
+            <h1>Yay! 🎉💕</h1>
+            <p class="love-message">I knew you'd say yes!</p>
+            <p class="emoji-big">😘❤️🥰</p>
+            <p class="promise">I want to make this Valentine's Day unforgettable!</p>
+            <img src="assets/hugging.gif" alt="Hug Animation" class="hug-animation" />
+        </div>
+    </div>
+
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Config file with secrets (add to .gitignore) -->
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
